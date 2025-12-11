@@ -138,7 +138,23 @@
     </div>
   </section>
 
-  
+   <!-- TRACKING EKSPEDISI -->
+<section class="tracking-section">
+  <h2 class="tracking-title">Lacak Pengiriman</h2>
+  <p class="tracking-desc">Masukkan nomor resi untuk melacak perjalanan paket Anda.</p>
+
+  <div class="tracking-box">
+    <input type="text" id="resiInput" placeholder="Masukkan Nomor Resi">
+    <select id="courierSelect">
+      <option value="jne">JNE</option>
+      <option value="j&t">J&T</option>
+      <option value="sicepat">SiCepat</option>
+      <option value="anteraja">AnterAja</option>
+      <option value="pos">POS Indonesia</option>
+    </select>
+    <button onclick="cekResi()" class="tracking-btn">Lacak Sekarang</button>
+  </div>
+</section>
 
   <!-- FOOTER / KONTAK -->
 <footer id="kontak" class="footer">
@@ -179,3 +195,4 @@
 
 </body>
 </html>
+
