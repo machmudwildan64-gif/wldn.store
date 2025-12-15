@@ -386,3 +386,72 @@ body {
   color: #444;
 }
 
+/* MODAL BELI */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 12px;
+  text-align: center;
+  animation: zoom .3s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-content h3 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.modal-content p {
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border-radius: 8px;
+}
+
+.btn-wa {
+  background: #25D366;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-wa:hover {
+  opacity: .9;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+@keyframes zoom {
+  from { transform: scale(.8); opacity: 0 }
+  to { transform: scale(1); opacity: 1 }
+}
